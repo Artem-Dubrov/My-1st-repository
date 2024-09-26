@@ -1,12 +1,8 @@
 import telebot
-# import requests
-# import json
 from extensions import APIException,CurrencyConverter
-
 from config import TOKEN,currency_list
 
 bot = telebot.TeleBot(TOKEN)
-
 
 @bot.message_handler(commands=['start', 'help'])
 def help(message: telebot.types.Message):
