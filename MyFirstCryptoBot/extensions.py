@@ -1,6 +1,5 @@
 import requests
 import json
-
 from config import currency_list,API_key
 
 class APIException(Exception):
@@ -31,3 +30,4 @@ class CurrencyConverter:
         total_amount = quote_rate * amount
 
         return total_amount
+        
